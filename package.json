@@ -1,6 +1,6 @@
 {
   "name": "kloc",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Get kloc for project.",
   "main": "index.js",
   "author": "Damir Mustafin <damir.mustafin@protonmail.ch>",
@@ -11,5 +11,24 @@
   "dependencies": {
     "expand-home-dir": "^0.0.3",
     "meow": "^9.0.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frenchbread/kloc.git"
+  },
+  "keywords": [
+    "kloc",
+    "lines",
+    "count",
+    "project",
+    "software"
+  ],
+  "bugs": {
+    "url": "https://github.com/frenchbread/kloc/issues"
+  },
+  "homepage": "https://github.com/frenchbread/kloc#readme"
 }

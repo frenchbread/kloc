@@ -3,13 +3,23 @@ KLOC
 
 > Get [kloc](https://www.webopedia.com/definitions/kloc/) for a software program.
 
+## install
+
+```bash
+# globally
+
+❯ yarn global add kloc
+
+# or in project
+
+❯ yarn add kloc
+```
+
 ## usage
 
 ### `cli`
 
 ```bash
-❯ yarn global add kloc
-
 ❯ kloc ~/code/my-app
 
 KLOC: 41.912
