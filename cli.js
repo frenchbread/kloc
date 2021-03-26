@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+'use strict'
+
 const meow = require('meow')
 
 const get_kloc = require('./')
@@ -25,7 +28,7 @@ if (cli.input.length > 0 && cli.input[0] !== '') {
     const { exclude, showLogs } = cli.flags
 
     get_kloc(project_path, { exclude, show_logs: showLogs })
-      .then(kloc => console.log(`\nKLOC IN PROJECT: ${kloc}.`))
+      .then(kloc => console.log(`\nKLOC: ${kloc}.`))
       .catch(err => console.error(err.message))
   } else {
     console.log(cli.help)
