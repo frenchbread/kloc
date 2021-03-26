@@ -1,5 +1,5 @@
 {
-  "name": "project-kloc",
+  "name": "kloc",
   "version": "0.1.0",
   "description": "Get kloc for project.",
   "main": "index.js",
