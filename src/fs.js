@@ -1,6 +1,8 @@
 const path = require('path')
 const fs = require('fs')
 
+const expand_homedir = require('expand-home-dir')
+
 module.exports = {
   get_dirs (_path, to_exclude = []) {
     const dirs = fs.readdirSync(_path)
@@ -23,5 +25,6 @@ module.exports = {
   },
   is_file: _path => fs.statSync(_path).isFile(),
   is_dir: _path => fs.statSync(_path).isDirectory(),
-  read_file: (_path, encoding) => fs.readFileSync(_path, encoding)
+  read_file: (_path, encoding) => fs.readFileSync(_path, encoding),
+  path_resolve: _path => _path.includes('~') ? expand_homedir(_path) : path.resolve(_path),
 }

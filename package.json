@@ -1,6 +1,6 @@
 {
   "name": "kloc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Get kloc for project.",
   "main": "index.js",
   "author": "Damir Mustafin <damir.mustafin@protonmail.ch>",
@@ -9,6 +9,7 @@
     "kloc": "cli.js"
   },
   "dependencies": {
+    "expand-home-dir": "^0.0.3",
     "meow": "^9.0.0"
   }
 }

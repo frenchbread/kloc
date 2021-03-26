@@ -1,13 +1,13 @@
 const fs = require('./fs')
 
-const kloc = async (project_path, { exclude = '', show_logs = false } = {}) => {
+const kloc = async (target_path, { exclude = '', show_logs = false } = {}) => {
 
   let lines_count = 0
   const to_exclude = exclude.length > 0
     ? exclude.split(',')
     : []
 
-  const files = fs.get_files_rec(project_path, to_exclude)
+  const files = fs.get_files_rec(fs.path_resolve(target_path), to_exclude)
 
   show_logs
     ? console.log(`\nGot ${files.length} files!\n`)
